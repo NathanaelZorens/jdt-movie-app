@@ -1,4 +1,4 @@
-"# Stage 1: Build React App
+# Stage 1: Build React App
 FROM node:18-alpine AS build
 WORKDIR /app
 
@@ -22,10 +22,10 @@ WORKDIR /app
 RUN npm install -g serve
 
 # Copy hasil build dari stage 1
-COPY --from=build /app/build /app/build
+COPY --from=build /app/dist /app/dist
 
-# Expose port 3009
-EXPOSE 3009
+# Expose port 5473
+EXPOSE 5473
 
 # Jalankan serve untuk menyajikan React App
-CMD [""serve"", ""-s"", ""build"", ""-l"", ""3009""]"
+CMD [""serve"", ""-s"", ""dist"", ""-l"", ""5473""]
