@@ -24,8 +24,8 @@ RUN npm install -g serve
 # Copy hasil build dari stage 1
 COPY --from=build /app/build /app/build
 
-# Expose port 3000
-EXPOSE 3000
+# Expose port 3009
+EXPOSE 3009
 
 # Jalankan serve untuk menyajikan React App
 CMD [""serve"", ""-s"", ""build"", ""-l"", ""3009""]"
