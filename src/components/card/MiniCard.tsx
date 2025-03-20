@@ -8,12 +8,8 @@ interface CardProps {
 const MiniCard: React.FC<CardProps> = ({ data }) => {
   const {
     title,
-    original_title,
     name,
-    original_name,
-    release_date,
-    first_air_date,
-    overview,
+    
     poster_path,
   } = data;
   return (

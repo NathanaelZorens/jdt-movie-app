@@ -1,4 +1,4 @@
-"# Stage 1: Build React App
+# Stage 1: Build React App
 FROM node:18-alpine AS build
 WORKDIR /app
 
@@ -28,4 +28,4 @@ COPY --from=build /app/build /app/build
 EXPOSE 3009
 
 # Jalankan serve untuk menyajikan React App
-CMD [""serve"", ""-s"", ""build"", ""-l"", ""3009""]"
+CMD [""serve"", ""-s"", ""build"", ""-l"", ""3009""]

@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { Movie, PaginationInfo, ResponseData } from "../services/type";
-import { getTrending } from "../services/home";
 import { getNowPlaying } from "../services/nowPlaying/api";
 
 export const useNowPlayingData = () => {
