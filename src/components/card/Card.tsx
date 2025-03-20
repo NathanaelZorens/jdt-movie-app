@@ -18,13 +18,13 @@ const Card: React.FC<CardProps> = ({ data }) => {
   } = data;
   return (
     <div className="flex flex-row h-64 w-48 md:w-[400px] border-3 border-amber-300 m-2 p-2 gap-2 bg-gray-950 rounded-2xl">
-      <div className="flex flex-col m-auto z-0">
+      <div className="w-32 h-56 flex flex-col m-auto z-0 ">
         <img
           src={`https://image.tmdb.org/t/p/original${poster_path}`}
           alt={title ?? name}
           className="w-32 md:w-50 rounded-2xl m-auto"
         />
-        <h1 className="flex md:hidden text-md text-clip text-center font-medium mx-auto my-1 hover:text-amber-300 hover:underline underline-offset-4">
+        <h1 className="flex md:hidden text-md text-clip text-center font-medium mx-auto my-1 hover:text-amber-300 hover:underline underline-offset-4  w-max-32 overflow-hidden">
           <a href="/#">{title ?? name}</a>
         </h1>
       </div>
