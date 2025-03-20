@@ -28,4 +28,4 @@ COPY --from=build /app/dist /app/dist
 EXPOSE 5173
 
 # Jalankan serve untuk menyajikan React App
-CMD [""serve"", ""-s"", ""dist"", ""-l"", ""5173""]
+CMD ["serve", "-s", "dist", "-l", "5173"]
