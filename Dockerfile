@@ -24,8 +24,8 @@ RUN npm install -g serve
 # Copy hasil build dari stage 1
 COPY --from=build /app/dist /app/dist
 
-# Expose port 5473
-EXPOSE 5473
+# Expose port 5173
+EXPOSE 5173
 
 # Jalankan serve untuk menyajikan React App
-CMD [""serve"", ""-s"", ""dist"", ""-l"", ""5473""]
+CMD [""serve"", ""-s"", ""dist"", ""-l"", ""5173""]
